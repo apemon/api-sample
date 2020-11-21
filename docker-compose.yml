@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  api-sample:
+    image: api-sample/api
+    build:
+      context: .
+      dockerfile: api-sample/Dockerfile
+    environment:
+      - MONGO_URL=mongodb://mongo:27017
+  mongo:
+    image: mongo
+    restart: always
+    volumes:
+      - ./mongo_data:/data/db
+    ports:
+      - 27017:27017

@@ -1,0 +1,18 @@
+[
+    {
+        "_id": {
+            "$oid": "5fb97593bb8a2e778106ae37"
+        },
+        "name": "John",
+        "age": 10,
+        "interests": ["book", "game"]
+    },
+    {
+        "_id": {
+            "$oid": "5fb97adc0720501e580630d8"
+        },
+        "name": "beer",
+        "age": 40,
+        "interests": ["sport"]
+    }
+]
