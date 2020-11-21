@@ -8,6 +8,8 @@ services:
       dockerfile: api-sample/Dockerfile
     environment:
       - MONGO_URL=mongodb://mongo:27017
+    ports:
+      - 8888:80
   mongo:
     image: mongo
     restart: always
